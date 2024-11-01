@@ -1,0 +1,259 @@
+/* LAYOUT ONLY!! */ /* orange 		#cc6604 */
+	/* charcoal 	#302F34 048-047-052*/ /* darkgrey		#808080 128-128-128*/
+	/* warmgrey		#594F4F */ /* lightgrey	#C2C2C6 */
+	/* verylightgrey	#D6DDE6 */ /* lightblue	#ccffff 204-255-255*/
+	/* TEXT MAKEUP AND OTHER COSMETICS HERE!!! */
+#hideable {
+	background-color: white;
+}
+
+/* image properties */
+.imgleft {
+	float: left;
+	padding: 6px 10px 6px 0px;
+}
+
+.imgright {
+	float: right;
+	padding: 6px 0px 6px 10px;
+}
+
+img {
+	border-width: 0px;
+}
+
+.imgaboutus {
+	align: center;
+}
+
+/* this image is used in details.php and browse.php, all other images should not have borders */
+.borderimg {
+	border-style: solid;
+	border-color: #D6DDE6; /*verylightgrey*/
+	border-width: 1px;
+}
+
+/* maintenance messages */
+#mms {
+	text-align: left;
+	color: blue;
+}
+
+/* price format */
+*.price {
+	font-weight: bold;
+	text-decoration: strong;
+	text-align: right;
+}
+
+/* new products */
+.new {
+	color: black;
+	font-weight: bold;
+	display: inline;
+}
+
+/* front page */
+.frontpage {
+	height: 185px;
+}
+
+.frontpage p,.frontpage h5 { /*	height: 50%;*/
+	height: 1em;
+}
+
+/* tables of this class have no border */
+table.borderless {
+	border-collapse: collapse;
+	border-style: hidden;
+}
+
+table.borderless th,table.borderless td {
+	border: 0px;
+	padding: 5px;
+	border-style: hidden;
+	vertical-align: top;
+}
+
+table.borderless caption,.captitle {
+	font-size: 14px;
+	font-weight: bold;
+	color: #302F34; /*charcoal*/
+	text-align: left;
+	padding-top: 3px;
+	padding-bottom: 8px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.borderless td h5 {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* a class that describes how tables should look */
+.datatable {
+	border: 1px solid #808080; /*darkgrey*/
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 100%;
+}
+
+.datatable td {
+	border: 1px solid #808080; /*darkgrey*/
+	padding: 4px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #FFFFFF;
+}
+
+.datatable th {
+	font-weight: bold;
+	color: black;
+	text-align: left;
+	padding: 4px;
+	border: 1px solid #808080; /*darkgrey*/
+	background-color: #C2C2C6; /*lightgrey*/ /*	display: none;*/
+}
+
+.datatable caption {
+	font-size: 24px;
+	font-weight: bold;
+	color: #302F34; /*charcoal*/
+	text-align: left;
+	padding-top: 3px;
+	padding-bottom: 8px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.datatable input[type="text"],.datatable textarea {
+	
+}
+
+.datatable tr.altrow td,textarea.altrow {
+	background-color: #D6DDE6; /*verylightgrey*/
+	color: black;
+}
+
+.datatable tr:hover,.datatable tr.hilite {
+	background-color: red; /*lightblue*/
+	color: black;
+}
+
+/* dashboard divs */
+div.dashboard {
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* dashboard tables */
+table.dashboard {
+	border: 1px solid;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 25%;
+}
+
+table.dashboard td {
+	border: 0px;
+	padding: 4px;
+	text-align: left;
+	vertical-align: top;
+}
+
+table.dashboard th {
+	font-weight: bold;
+	text-align: left;
+	padding: 4px;
+	border: 1px solid;
+}
+
+table.dashboard caption {
+	font-size: larger;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 8px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* (?) popup properties */
+a.info {
+	position: relative; /*this is the key*/
+	z-index: 24;
+	background-color: white;
+	color: black;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+a.info:hover {
+	z-index: 90;
+	background-color: #004c93; /* darkblue */
+	color: white;
+}
+
+a.info span {
+	display: none
+}
+
+a.info:hover span { /*the span will display just on :hover state*/
+	display: block;
+	position: absolute;
+	z-index: 90;
+	top: 2em;
+	left: 1em;
+	width: 25em;
+	border: 1px solid #C2C2C6; /*lightgrey*/
+	background-color: #ccffff; /*lightblue*/
+	color: black;
+	text-align: left
+}
+
+.fpflag {
+	position: relative;
+	top: 29px;
+	left: 12px;
+	display: block;
+}
+
+.frontpage {
+	width: 145px;
+	height: 185px;
+}
+
+/* REQUIRED if using Artisteer templates*/
+.art-PostHeaderIcon-wrapper {
+	display: none;
+}
+
+.art-page-footer {
+	display: none;
+}
+
+input[type="submit"] {
+	
+}
+
+.scrollbox {
+	height: 150px;
+	overflow: scroll;
+	border: 1px;
+}
+
+#zadminmenuasicons img.zmenuicon, img.zmenuicon {
+	width:32px;
+	height:32px;
+}
+
+div.faces ul,div#zfaces ul,ul#zfaces,ul.zfaces {
+	list-style-type: none;
+}
+
